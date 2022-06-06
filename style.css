@@ -21,7 +21,6 @@ p {
   font-size: 1.4rem;
   margin-top: 5px;
   line-height: 2.5rem;
-  /* font-weight: 200; */
   letter-spacing: 0.05rem;
 }
 
@@ -33,15 +32,7 @@ body {
 
 body {
   font-size: 1.6rem;
-
   overflow: overlay;
-}
-
-.wrapper {
-  width: min(80rem, 100%);
-  margin: 2rem auto;
-  padding-inline: 2.4rem;
-  color: white;
 }
 
 ul {
@@ -97,42 +88,6 @@ section .content p {
   color: #394347;
 }
 
-/* section img {
-  height: 70%;
-  width: 70%;
-  object-fit: cover;
-} */
-
-.button {
-  background: white;
-
-  border: none;
-  border-radius: 4rem;
-
-  margin-bottom: 6rem;
-
-  padding: 1.6rem 3.2rem;
-  width: fit-content;
-
-  color: white;
-  font-size: 1.4rem;
-  font-weight: 700;
-  text-transform: uppercase;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1.6rem;
-
-  text-decoration: none;
-
-  transition: background 200ms;
-}
-
-.button:hover {
-  background-color: white;
-}
-
 .social-links {
   display: flex;
   align-items: center;
@@ -140,25 +95,11 @@ section .content p {
   gap: 3.2rem;
 }
 
-/* custom colors */
-
-#navigation .logo path[fill*='#00856F'],
-#backToTopButton circle {
-  fill: rgb(197, 97, 228);
-}
-
-button.open-menu path[stroke*='#00856F'],
-#contact li path {
-  stroke: white;
-}
-
-body.menu-expanded #navigation .logo path,
-#navigation.scroll .logo path {
-  fill: white;
-}
-
-#navigation.scroll button.open-menu path[stroke*='#00856F'] {
-  stroke: white;
+.wrapper {
+  width: min(80rem, 100%);
+  margin: 2rem auto;
+  padding-inline: 2.4rem;
+  color: white;
 }
 
 .container {
@@ -177,6 +118,21 @@ body.menu-expanded #navigation .logo path,
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   text-align: center;
+}
+
+/*=== CUSTOMIZAÇÃO DE CORES ===================*/
+
+#backToTopButton circle {
+  fill: rgb(197, 97, 228);
+}
+
+button.open-menu path[stroke*='#00856F'],
+#contact li path {
+  stroke: white;
+}
+
+#navigation.scroll button.open-menu path[stroke*='#00856F'] {
+  stroke: white;
 }
 
 /*=== NAVIGATION =================================*/
@@ -283,54 +239,20 @@ body.menu-expanded .menu {
   text-decoration: none;
 }
 
-.menu ul li a:hover {
-  color: rgb(228, 204, 97);
-}
-
-/* .menu .button {
-  background: white;
-  border-radius: 4rem;
-  font-weight: 700;
-  font-size: 1.8rem;
-  line-height: 2.3rem;
-  text-transform: uppercase;
-  text-decoration: none;
-
-  color: rgb(228, 204, 97);
-
-  display: inline-block;
-  padding: 16px 32px;
-
-  margin-top: 4.8rem;
-  margin-bottom: 8rem;
-} */
-
-/* .menu .button:hover {
-  background-color: rgb(228, 204, 97);
-  color: rgb(168, 109, 109);
-
-  filter: brightness(1.3);
-} */
-
-body.menu-expanded .logo,
 body.menu-expanded button {
   position: relative;
   z-index: 100;
   color: white;
 }
 
-body.menu-expanded .logo path {
-  fill: white;
-}
-
 body.menu-expanded button path {
   stroke: white;
 }
 
-/* Seção de apresentação */
+/*=== PRESENTATION =================================*/
 
 #presentation {
-  background-image: url(./img-capa-portfolio.jpg);
+  background-image: url(./imagens/img-capa-portfolio.jpg);
   background-size: cover;
   background-position: center;
   position: relative;
@@ -435,11 +357,9 @@ body.menu-expanded button path {
 #about .col-b img {
   height: 100%;
   width: 100%;
-
-  /* object-fit: cover; */
 }
 
-/* Seção de Portifólio */
+/*=== PORTFOLIO =================================*/
 
 #portfolio {
   background-color: rgb(248, 245, 233);
@@ -587,7 +507,6 @@ footer #logotipo {
 }
 
 footer p {
-  color: var(--brand-beige);
   line-height: 2;
 
   margin-bottom: 3.2rem;
@@ -597,7 +516,7 @@ footer .social-links {
   justify-content: flex-start;
 }
 
-/* BACK TO TOP */
+/*=== BACK TO TOP =================================*/
 #backToTopButton {
   position: fixed;
   bottom: 1rem;
@@ -616,7 +535,7 @@ footer .social-links {
   transform: translateY(0);
 }
 
-/* Keyframes */
+/*=== kEY FRAMES =================================*/
 
 @keyframes text_reveal {
   100% {
@@ -641,28 +560,9 @@ footer .social-links {
   }
 }
 
-/* Media Query */
+/*=== MEDIA QUERY =================================*/
+/*=== RESPONSIVO ==================================*/
 @media only screen and (min-width: 1024px) {
-  #portfolio .project-item {
-    flex-direction: row;
-    height: 400px;
-    margin: 0;
-    width: 100%;
-    border-radius: 0;
-  }
-  #portfolio .all-projects .project-info {
-    height: 100%;
-  }
-  #portfolio .all-projects .project-img {
-    height: 100%;
-  }
-  #portfolio .project-item:nth-child(even) {
-    flex-direction: row-reverse;
-  }
-}
-
-/*=== RESPONSIVO =================================*/
-@media (min-width: 1024px) {
   /*=== GERAL =================================*/
   body {
     overflow: auto;
@@ -709,8 +609,7 @@ footer .social-links {
   }
 
   nav#navigation .close-menu,
-  nav#navigation .open-menu,
-  nav#navigation .social-links {
+  nav#navigation .open-menu {
     display: none;
   }
 
@@ -727,35 +626,10 @@ footer .social-links {
   }
 
   nav#navigation .menu ul li a {
-    color: var(--primary-color);
     opacity: 0.7;
   }
 
-  nav#navigation .menu a.button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem 2.4rem;
-
-    border: 1px solid var(--primary-color);
-    border-radius: 4rem;
-
-    color: var(--primary-color);
-
-    font-weight: 700;
-    font-size: 1.4rem;
-    line-height: 1.8rem;
-    text-transform: uppercase;
-  }
-
-  nav#navigation .menu a.button:hover {
-    background-color: var(--primary-color);
-    border: none;
-    color: white;
-  }
-
   nav#navigation.scroll .menu ul li a {
-    color: var(--brand-light-2);
     opacity: 0.6;
   }
 
@@ -778,7 +652,6 @@ footer .social-links {
     content: '';
     width: 0%;
     height: 2px;
-    background-color: var(--primary-color);
 
     position: relative;
     bottom: -2rem;
@@ -804,62 +677,23 @@ footer .social-links {
     opacity: 1;
   }
 
-  nav#navigation.scroll .menu a.button.active,
-  nav#navigation.scroll .menu a.button:hover {
-    background-color: var(--primary-color);
-    filter: brightness(1.3);
-    border: none;
-  }
-
-  /*=== HOME =================================*/
-  /* #home::before {
-    height: calc(96% - var(--nav-height));
-  }
-
-  #home {
-    padding-top: var(--nav-height);
-  }
-
-  #home .wrapper {
-    grid-template-columns: 60.5rem 1fr;
-    grid-template-areas:
-      'A B'
-      'C C';
-  }
-
-  #home .col-a {
-    text-align: left;
-    align-self: center;
-  }
-
-  #home h1 {
-    font-size: 5.2rem;
-  }
-
-  #home .content p {
-    font-size: 1.8rem;
-  }
-
-  #home .stats {
-    grid-area: C;
-
+  /*=== PORTFOLIO ==============================*/
+  #portfolio .project-item {
     flex-direction: row;
-    padding: 6rem;
-    gap: 0;
-  }
-
-  #home .stats .stat + .stat {
-    border-left: 1px solid var(--primary-color);
-  }
-
-  #home .stats .stat {
-    flex: 1;
-  }
-
-  #home .button {
+    height: 400px;
     margin: 0;
-  } */
-
+    width: 100%;
+    border-radius: 0;
+  }
+  #portfolio .all-projects .project-info {
+    height: 100%;
+  }
+  #portfolio .all-projects .project-img {
+    height: 100%;
+  }
+  #portfolio .project-item:nth-child(even) {
+    flex-direction: row-reverse;
+  }
   /*=== ABOUT =================================*/
   #about .wrapper {
     grid-template-columns: 48rem 1fr;
@@ -875,7 +709,7 @@ footer .social-links {
     margin-bottom: 0;
   }
 
-  /*=== CONTACT =================================*/
+  /*=== CONTACT ===============================*/
 
   #contact .wrapper {
     grid-template-columns: 1fr 57.5rem;
