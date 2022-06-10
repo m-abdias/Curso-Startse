@@ -19,7 +19,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ### 🚀 Link 
 Para acessar ao site do projeto clique no link abaixo:
-- [Link do Projeto](https://certain-health.surge.sh/)
+- [Link do Projeto](https://venomous-book.surge.sh/)
 
 
 ### 🔖 Layout do Desafio implementado
