@@ -14,7 +14,7 @@ Além da página de contato, é interessante nomear as sections com seus id's e 
 ### 🧪 Tecnologias
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [HTML];
-- [CSS]
+- [CSS];
 
 
 ### 🚀 Link 
